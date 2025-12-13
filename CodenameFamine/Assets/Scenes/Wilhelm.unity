@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 150909878}
   m_Layer: 0
   m_Name: Circle (1)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,7 +223,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 373444871}
   m_Layer: 0
   m_Name: Box (1)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,7 +389,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -518,6 +518,51 @@ Transform:
   - {fileID: 150909881}
   - {fileID: 2135628050}
   - {fileID: 1154628572}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &491163562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 491163564}
+  - component: {fileID: 491163563}
+  m_Layer: 0
+  m_Name: Script Installer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &491163563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491163562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39116aaed7390448a9d3ae7df84a02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Throwable2DInstaller
+  throwForceMultiplier: 10
+--- !u!4 &491163564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491163562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14341, y: 4.48921, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &728443371
@@ -649,7 +694,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+  m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -672,7 +717,7 @@ GameObject:
   - component: {fileID: 828816718}
   m_Layer: 0
   m_Name: Box (2)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -737,7 +782,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -851,7 +896,7 @@ Transform:
   m_GameObject: {fileID: 1039282790}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11, y: -5.5, z: 0}
+  m_LocalPosition: {x: -11, y: -5.51, z: 0}
   m_LocalScale: {x: 21, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -953,7 +998,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+  m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -999,7 +1044,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.35893556, g: 0.4899816, b: 0.6981132, a: 0}
+  m_BackGroundColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1020,7 +1065,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.001
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -1113,7 +1158,7 @@ GameObject:
   - component: {fileID: 1154628569}
   m_Layer: 0
   m_Name: Circle (3)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1168,7 +1213,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1269,7 +1314,7 @@ GameObject:
   - component: {fileID: 1399838794}
   m_Layer: 0
   m_Name: Box (4)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1349,7 +1394,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1497,7 +1542,7 @@ Transform:
   m_GameObject: {fileID: 1664173370}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: -20.5, y: 0, z: 0}
+  m_LocalPosition: {x: -20.42, y: 0, z: 0}
   m_LocalScale: {x: 13, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1599,7 +1644,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+  m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1622,7 +1667,7 @@ GameObject:
   - component: {fileID: 1681868522}
   m_Layer: 0
   m_Name: Box (3)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1687,7 +1732,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1768,7 +1813,7 @@ Transform:
   m_GameObject: {fileID: 1681868521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7871393, w: 0.61677533}
-  m_LocalPosition: {x: -13.68, y: -0.74, z: 0}
+  m_LocalPosition: {x: -13.51, y: -0.24, z: 0}
   m_LocalScale: {x: 1.4999998, y: 1.4999998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1788,7 +1833,7 @@ GameObject:
   - component: {fileID: 1795039072}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1927,7 +1972,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1954,7 +1999,7 @@ GameObject:
   - component: {fileID: 1809595233}
   m_Layer: 0
   m_Name: Polygon (3)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2023,7 +2068,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2124,7 +2169,7 @@ GameObject:
   - component: {fileID: 1908570062}
   m_Layer: 0
   m_Name: Polygon (1)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2193,7 +2238,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2294,7 +2339,7 @@ GameObject:
   - component: {fileID: 1941832126}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2423,7 +2468,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2463,7 +2508,7 @@ Transform:
   m_GameObject: {fileID: 1951966749}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: -1.5, y: 0, z: 0}
+  m_LocalPosition: {x: -1.6, y: 0, z: 0}
   m_LocalScale: {x: 13, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2565,7 +2610,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+  m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2588,7 +2633,7 @@ GameObject:
   - component: {fileID: 1967796477}
   m_Layer: 0
   m_Name: Polygon (2)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2657,7 +2702,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2758,7 +2803,7 @@ GameObject:
   - component: {fileID: 2064945363}
   m_Layer: 0
   m_Name: Polygon
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2901,7 +2946,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2928,7 +2973,7 @@ GameObject:
   - component: {fileID: 2135628047}
   m_Layer: 0
   m_Name: Circle (2)
-  m_TagString: Untagged
+  m_TagString: ThrowableShape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2983,7 +3028,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1.35
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -3075,6 +3120,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1597954237}
+  - {fileID: 491163564}
   - {fileID: 1134595305}
   - {fileID: 34771873}
   - {fileID: 423998891}

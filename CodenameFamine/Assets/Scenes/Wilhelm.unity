@@ -223,7 +223,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -389,7 +389,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -782,7 +782,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1213,7 +1213,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1394,7 +1394,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1732,7 +1732,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -1972,7 +1972,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2068,7 +2068,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2238,7 +2238,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2468,7 +2468,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2702,7 +2702,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -2946,7 +2946,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:
@@ -3028,7 +3028,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 1.35
+  m_AngularDamping: 2
   m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3dc55e4bea55b484995455d35e4c6f94, type: 2}
   m_IncludeLayers:

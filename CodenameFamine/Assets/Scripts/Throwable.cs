@@ -1,27 +1,26 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class Throwable : MonoBehaviour
 {
-    [SerializeField] private float throwForceMultiplier = .2f;
+    [SerializeField] private float throwForceMultiplier;
+    [SerializeField] private float grabFrequency; //stiffness of grab
+    [SerializeField] private float grabDamping; //reduce oscillation of grab
 
     private Rigidbody2D rb;
     private Camera mainCam;
+    private TargetJoint2D grabJoint;
 
     private InputAction pointAction;
     private InputAction grabAction;
 
-    //runtime states
-    private bool isGrabbed;
     private Vector2 lastMouseWorldPos;
     private Vector2 throwVelocity;
 
-    public void SetThrowForceMultiplier(float _throwForceMultiplier)
-    {
-        throwForceMultiplier = _throwForceMultiplier;
-    }
+    public void SetThrowForceMultiplier(float throwForceMultiplierValue) => throwForceMultiplier = throwForceMultiplierValue;
+    public void SetGrabFrequency(float grabFrequencyValue) => grabFrequency = grabFrequencyValue;
+    public void SetGrabDamping(float grabDampingValue) => grabDamping = grabDampingValue;
 
     private void Awake()
     {
@@ -49,49 +48,44 @@ public class Throwable : MonoBehaviour
 
     private void Update()
     {
-        if (!isGrabbed)
+        if (grabJoint == null)
             return;
 
-        //convert mouse position to world position
         Vector2 mouseWorldPos = mainCam.ScreenToWorldPoint(pointAction.ReadValue<Vector2>());
-
-        //calculate velocity based on mouse movement
         throwVelocity = (mouseWorldPos - lastMouseWorldPos) / Time.deltaTime;
-
-        //move object directly while grabbed
-        rb.position = mouseWorldPos;
-
         lastMouseWorldPos = mouseWorldPos;
+
+        grabJoint.target = mouseWorldPos;
     }
 
-    private void OnGrabStarted(InputAction.CallbackContext ctx)
+    private void OnGrabStarted(InputAction.CallbackContext context)
     {
-        //check if mouse is over collider
         Vector2 mouseWorldPos = mainCam.ScreenToWorldPoint(pointAction.ReadValue<Vector2>());
         Collider2D hit = Physics2D.OverlapPoint(mouseWorldPos);
-
-        if (hit == null || hit.gameObject != gameObject)
+        
+        if (!hit || hit.gameObject != gameObject)
             return;
 
-        isGrabbed = true;
+        grabJoint = gameObject.AddComponent<TargetJoint2D>();
+        grabJoint.autoConfigureTarget = false;
+        grabJoint.target = mouseWorldPos;
 
-        //disable physics on grab
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        rb.isKinematic = true;
+        grabJoint.frequency = grabFrequency;
+        grabJoint.dampingRatio = grabDamping;
+
+        grabJoint.anchor = rb.transform.InverseTransformPoint(mouseWorldPos);
 
         lastMouseWorldPos = mouseWorldPos;
     }
 
-    private void OnGrabReleased(InputAction.CallbackContext ctx)
+
+    private void OnGrabReleased(InputAction.CallbackContext context)
     {
-        if (!isGrabbed)
+        if (grabJoint == null)
             return;
 
-        isGrabbed = false;
-
-        //enable physics
-        rb.isKinematic = false;
+        Destroy(grabJoint);
+        grabJoint = null;
 
         rb.AddForce(throwVelocity * throwForceMultiplier, ForceMode2D.Impulse);
     }

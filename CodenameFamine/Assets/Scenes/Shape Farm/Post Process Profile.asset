@@ -28,25 +28,6 @@ MonoBehaviour:
   rounded:
     m_OverrideState: 1
     m_Value: 0
---- !u!114 &-4834685849827862660
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
-  m_Name: PaniniProjection
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.PaniniProjection
-  active: 1
-  distance:
-    m_OverrideState: 1
-    m_Value: 1
-  cropToFit:
-    m_OverrideState: 1
-    m_Value: 1
 --- !u!114 &-3954751074975405734
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -62,7 +43,35 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
+    m_Value: 0.1
+--- !u!114 &-2785798831158117912
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.LensDistortion
+  active: 1
+  intensity:
+    m_OverrideState: 1
     m_Value: 0.35
+  xMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  yMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  scale:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,11 +86,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.VolumeProfile
   components:
   - {fileID: 5798854986984441801}
-  - {fileID: -4834685849827862660}
   - {fileID: -3954751074975405734}
   - {fileID: 8877286012311364754}
   - {fileID: -8889566491536851587}
   - {fileID: 8302600238946836806}
+  - {fileID: -2785798831158117912}
 --- !u!114 &5798854986984441801
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -158,7 +167,7 @@ MonoBehaviour:
     m_Value: 1
   focalLength:
     m_OverrideState: 1
-    m_Value: 300
+    m_Value: 45
   bladeCount:
     m_OverrideState: 1
     m_Value: 3

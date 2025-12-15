@@ -1,0 +1,6 @@
+/* Visual Studio Settings File */
+{
+  "textEditor.codeLens.testedBy": true,
+  "textEditor.codeLens.optimizeBenchmark": true,
+  "textEditor.codeLens.enabled": true
+}

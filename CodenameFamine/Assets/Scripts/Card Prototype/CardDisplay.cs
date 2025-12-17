@@ -29,19 +29,12 @@ public class CardDisplay : MonoBehaviour
     //color for each card type
     private readonly Color[] cardColors =
     {
-        /*new Color(0.788f, 0.635f, 0.302f), //artifact - antique gold
-        new Color(0.227f, 0.373f, 0.659f), //character - navy blue
-        new Color(0.549f, 0.114f, 0.094f), //creature - bloodsteel red
-        new Color(0.761f, 0.706f, 0.604f), //provision - parchment linen
-        new Color(0.482f, 0.294f, 0.718f), //spell - arcane violet
-        new Color(0.420f, 0.439f, 0.471f) //weapon - cold iron*/
-
-        new Color(0.94f, 0.91f, 0.80f), //artifact – antique gold
-        new Color(0.85f, 0.89f, 0.96f), //character – navy blue
-        new Color(0.95f, 0.84f, 0.83f), //creature – bloodsteel red
-        new Color(0.93f, 0.91f, 0.86f), //provision – parchment linen
-        new Color(0.89f, 0.84f, 0.96f), //spell – arcane violet
-        new Color(0.88f, 0.89f, 0.92f)  //weapon – cold iron
+        new Color(0.94f, 0.91f, 0.80f), //artifact – antique gold - (0.788f, 0.635f, 0.302f)
+        new Color(0.85f, 0.89f, 0.96f), //character – navy blue - (0.227f, 0.373f, 0.659f)
+        new Color(0.95f, 0.84f, 0.83f), //creature – bloodsteel red - (0.549f, 0.114f, 0.094f)
+        new Color(0.93f, 0.91f, 0.86f), //provision – parchment linen - (0.761f, 0.706f, 0.604f)
+        new Color(0.89f, 0.84f, 0.96f), //spell – arcane violet - (0.482f, 0.294f, 0.718f)
+        new Color(0.88f, 0.89f, 0.92f)  //weapon – cold iron - (0.420f, 0.439f, 0.471f)
     };
 
     private void Start() => UpdateCardDisplay();

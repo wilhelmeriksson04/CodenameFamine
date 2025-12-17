@@ -9,17 +9,21 @@ public class DeckManagerEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        if (target == null)
+            return;
+
         DrawDefaultInspector();
+
         DeckManager deckManager = (DeckManager)target;
-        
-        if (GUILayout.Button("Draw Next Card"))
+
+        if (GUILayout.Button("+1 Card"))
         {
             HandManager handManager = FindObjectOfType<HandManager>();
-            
+
             if (handManager != null)
                 deckManager.DrawCard(handManager);
             else
-                Debug.LogWarning("No HandManager Found");
+                Debug.LogWarning("No HandManager found");
         }
     }
 }

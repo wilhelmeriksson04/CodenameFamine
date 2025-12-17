@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d926d330ff8268458e3dc874df586c4, type: 3}
-  m_Name: John A. Raider
+  m_Name: Frozen In Fear
   m_EditorClassIdentifier: Assembly-CSharp::CardPrototype.Card
-  cardName: Jaohn A. Raider
-  cardType: 05000000
-  damageType: 
+  cardName: Frozen In Fear
+  cardType: 4
+  damageType: 0
   health: 0
   healthAdd: 0
-  damageMin: 0
-  damageMax: 0
-  range: 0
+  damage: 2
+  range: 2
   shieldAdd: 0
   shield: 0
-  ammoCount: 0
+  ammoCount: 5
   manaCount: 0

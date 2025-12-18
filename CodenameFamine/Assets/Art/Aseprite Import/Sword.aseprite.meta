@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Sword
     originalName: 
-    pivot: {x: 0.42592594, y: -0.46296296}
+    pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,8 +137,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 54
-      height: 54
+      width: 60
+      height: 60
     spriteID: e903ed5711d56414da7f8db4dc1533c9
     spriteBone: []
     spriteOutline: []
@@ -167,10 +167,10 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 25
-        y: 25
-        width: 54
-        height: 54
+        x: 2
+        y: 2
+        width: 60
+        height: 60
       spriteId: e903ed5711d56414da7f8db4dc1533c9
     linkedCells: []
     tileCells: []
@@ -181,5 +181,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 96, y: 96}
-  previousTextureSize: {x: 64, y: 64}
+  canvasSize: {x: 64, y: 64}
+  previousTextureSize: {x: 128, y: 128}

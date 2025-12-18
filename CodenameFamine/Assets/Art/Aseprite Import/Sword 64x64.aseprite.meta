@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64bab0d0363ae63409869fe2daff9775
+guid: 62d33d69250aeab4ea58ddf353d09a03
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Sword
+  - name: Sword 64x64
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 60
       height: 60
-    spriteID: e903ed5711d56414da7f8db4dc1533c9
+    spriteID: bedb9aa74970d9f49ae6ec2ef48427ce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1070957949
+      value0: 3120767697
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Sword
+    name: Sword 64x64
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Sword
+    - name: Sword 64x64
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 2
         width: 60
         height: 60
-      spriteId: e903ed5711d56414da7f8db4dc1533c9
+      spriteId: bedb9aa74970d9f49ae6ec2ef48427ce
     linkedCells: []
     tileCells: []
     tileSetIndex: 0

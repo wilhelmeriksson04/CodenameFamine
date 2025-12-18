@@ -17,7 +17,7 @@ MonoBehaviour:
   damageType: 2
   health: 6
   healthAdd: 0
-  damage: 1
+  damage: 2
   range: 0
   shieldAdd: 0
   shield: 0

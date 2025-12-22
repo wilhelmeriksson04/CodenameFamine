@@ -27,8 +27,8 @@ public class Throwable : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
 
-        pointAction = InputSystem.actions.FindAction("Player/Point");
-        grabAction = InputSystem.actions.FindAction("Player/Grab");
+        pointAction = InputSystem.actions.FindAction("ShapeMap/Point");
+        grabAction = InputSystem.actions.FindAction("ShapeMap/Grab");
     }
 
     private void OnEnable()
@@ -62,7 +62,7 @@ public class Throwable : MonoBehaviour
     {
         Vector2 mouseWorldPos = mainCam.ScreenToWorldPoint(pointAction.ReadValue<Vector2>());
         Collider2D hit = Physics2D.OverlapPoint(mouseWorldPos);
-        
+
         if (!hit || hit.gameObject != gameObject)
             return;
 

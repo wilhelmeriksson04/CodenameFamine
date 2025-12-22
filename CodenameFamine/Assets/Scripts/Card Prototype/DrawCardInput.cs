@@ -4,6 +4,8 @@ using System.Collections;
 
 public class DrawCardInput : MonoBehaviour
 {
+    [SerializeField] private InputActionAsset CardGame;
+
     private InputAction drawCardAction;
 
     //singleton
@@ -20,12 +22,15 @@ public class DrawCardInput : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        //finds action by name from Input Actions asset
-        drawCardAction = InputAction.actions.FindAction("CardGameplay/DrawCard");
-
+        drawCardAction = CardGame.FindAction("CardGame/DrawCard", true);
         drawCardAction.Enable();
+    }
+
+    private void OnDisable()
+    {
+        drawCardAction.Disable();
     }
 
     #region Accessors

@@ -16,14 +16,9 @@ public class HandManager : MonoBehaviour
 
     public List<GameObject> cardsInHand = new List<GameObject>(); //hold list of card prefabs in hand
 
-    private void Start()
-    {
-
-    }
-
     void Update()
     {
-        UpdateHandVisuals();
+        //UpdateHandVisuals();
     }
 
     public void AddCardToHand(Card cardData)
